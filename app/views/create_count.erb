@@ -1,0 +1,14 @@
+ <!DOCTYPE html>
+  <h1>Bienvenido a Register!</h1>
+  <p>Este es un esqueleto de sinatra que armamos para ti</p>
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <p> <%= @message_error %> </p>
+<form action="/register" method="post">
+    <p>Ingresa tu nombre:</p>
+    <input type="text" name="user_name" placeholder="Ingresa tu nombre aqui">
+    <p>Ingresa tu email:</p>
+    <input type="email" name="user_email" placeholder="Ingresa tu email aqui">
+    <p>Ingresa tu password:</p>
+    <input type="password" name="user_password" placeholder="Ingresa aqui tu password">
+    <input type="submit" id="submit">
+</form>
